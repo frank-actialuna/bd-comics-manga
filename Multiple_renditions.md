@@ -53,7 +53,7 @@ As example is a multi-lingual Manga. Alternate renditions each have their own se
 
 A rendition MAY also have an identifier, which is unique inside the visual narrative, and takes the form of a fragment identifier. A globally unique identifier for the rendition can be obtained by concatenation of the visual narrative URI and the rendition identifier, with a '#' separator.
 
-## Renditions vs spin/sections
+## Renditions vs spine/sections
 
 Question: do "alternates" replace "spine" and "sections" at the first level of the manifest?
 

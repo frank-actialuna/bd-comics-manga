@@ -56,7 +56,9 @@ This corresponds to the notion of "aspect fill". `optimize` (`fill`? `crop`?) me
 
 ### ratio
 
-`ratio` allows to define the minimum amount of image data that must be displayed, regardless of the relative aspect ratios of the image/fragment and the viewport. This option can be useful when the image is  very tall (resp. wide) with a landscape (resp. portrait) viewport.
+`ratio` allows to define the minimum (and optionally maximum) amount of image data that must be displayed, regardless of the relative aspect ratios of the image/fragment and the viewport. This option can be useful when the image is  very tall (resp. wide) with a landscape (resp. portrait) viewport.
+
+#### Minimum
 
 Given an aspect ratio, the largest rectangle that fits inside the viewport is used to scale the image in "fill" mode.
 
@@ -96,6 +98,23 @@ Given an aspect ratio, the largest rectangle that fits inside the viewport is us
 		}
 	}
 
+#### Minimum + maximum
+
+***This option may result in the image being cropped in a non-natural way.***
+
+The syntax is `"fit": "ratio#min,max"`
+
+- Example: forced 1:1 aspect ratio
+
+![](scroll/portrait_wide_ratio1_left.png) ![](scroll/landscape_wide_ratio1_1_left.png)
+
+	{
+		"href": "page1.jpg",
+		"type": "image/jpeg",
+		"properties": {
+			"fit": "ratio#1:1,1:1"
+		}
+	}
 
 ## Positioning
 

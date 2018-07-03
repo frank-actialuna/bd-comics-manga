@@ -67,7 +67,7 @@ rel        | string      | relationship to linked resource | No (except in "link
 type       | MIME type   | resource type         | Yes
 href       | URI         | pointer to the resource, either as a file path inside the archive (relative to manifest), or as an absolute URL | Yes
 hreflang   | string      | language of the resource (typical use: to specify an alternate manifest for a rendition in another language) | No
-templated  | boolean     | true if `href` is a template | No (default = false)
+templated  | boolean     | true if `href` is a template (search query...) | No (default = false)
 properties | object      | properties attached to the resource; keys depend on the resource type and relationship | No
 
 ### rendition
